@@ -33,9 +33,9 @@ spring:
     # Redis数据库索引（默认为0）
     database: 0
     # Redis服务器地址
-    # host: localhost
+    host: 111.229.99.2
     # Redis服务器连接端口
-    # port: 6379
+    port: 6379
     pool:
       # 连接池最大连接数（使用负值表示没有限制）
       max-active: 8
@@ -106,7 +106,7 @@ mybatis-plus:
   typeEnumsPackage: cn.jiiiiiin.module.common.enums.*
   global-config:
     db-config:
-        id-type: id_worker
+      id-type: id_worker
     #刷新mapper 调试神器
     refresh: true
     sql-parser-cache: false
@@ -140,14 +140,14 @@ jiiiiiin:
 spring:
   profiles: dev
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/vplusdb?&useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false
-    username: vplus
-    password: 1qaz@WSX
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://111.229.99.2:3306/vplusdb?&useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false
+    username: root
+    password: Zz19960219!
   # 配置redis链接地址
   redis:
-    host: 127.0.0.1
-#    host: 192.168.3.43
+    host: 111.229.99.2
+    #    host: 192.168.3.43
     port: 6379
 
 logging:
@@ -169,13 +169,13 @@ swagger:
 spring:
   profiles: produce
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/vplusdb?&useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false
-    username: vplus
-    password: 1qaz@WSX
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://111.229.99.2:3306/vplusdb?&useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false
+    username: root
+    password: Zz19960219!
   # 配置redis链接地址
   redis:
-    host: 127.0.0.1
+    host: 111.229.99.2
     port: 6379
 
 logging:

@@ -1,7 +1,7 @@
 package cn.jiiiiiin.security.core.validate.code.image;
 
 import cn.jiiiiiin.security.core.validate.code.entity.ValidateCode;
-import com.wf.captcha.Captcha;
+import com.wf.captcha.base.Captcha;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.web.bind.annotation.GetMapping;
